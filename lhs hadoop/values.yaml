@@ -64,8 +64,8 @@ yarn:
     # This should be tuned to fit your workload.
     resources:
       requests:
-        memory: "2048Mi"
-        cpu: "1000m"
+        memory: "256Mi"
+        cpu: "10m"
       limits:
         memory: "2048Mi"
         cpu: "1000m"
