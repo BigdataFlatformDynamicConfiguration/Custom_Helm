@@ -5,7 +5,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 1.12.3
-    created: "2021-05-09T20:16:21.9768011+09:00"
+    created: "2021-05-09T20:26:19.2233058+09:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -13,7 +13,7 @@ entries:
       - bitnami-common
       version: 1.x.x
     description: Fluentd is an open source data collector for unified logging layer
-    digest: ceccd0ee55981797d629b7b63e209f54599916060914a3ccf681c5e3c1eb3011
+    digest: 3c25fda6cefd5356eae5cd0eac72f1781d6946cb905f6d9b983f475c17630430
     home: https://github.com/bitnami/charts/tree/master/bitnami/fluentd
     icon: https://bitnami.com/assets/stacks/fluentd/img/fluentd-stack-220x234.png
     keywords:
@@ -35,7 +35,7 @@ entries:
   hadoop:
   - apiVersion: v1
     appVersion: 2.9.0
-    created: "2021-05-09T20:16:21.9787961+09:00"
+    created: "2021-05-09T20:26:19.2263294+09:00"
     deprecated: true
     description: DEPRECATED - The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models.
     digest: 8edb0b9a0942b921e073ef4b2d37c24afaabca3db1901f2160821c264bdc2ade
@@ -47,4 +47,4 @@ entries:
     urls:
     - hadoop-1.1.4.tgz
     version: 1.1.4
-generated: "2021-05-09T20:16:21.9708159+09:00"
+generated: "2021-05-09T20:26:19.2193382+09:00"
