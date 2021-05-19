@@ -26,14 +26,6 @@ spec:
             - name: kafka-module
               containerPort: {{ .Values.service.port }}
               protocol: TCP
-          livenessProbe:
-            httpGet:
-              path: /
-              port: kafka-module
-          readinessProbe:
-            httpGet:
-              path: /
-              port: kafka-module
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           command: ["/bin/sh", "-ec", "while :; do echo '.'; sleep 5 ; done"]
