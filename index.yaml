@@ -5,7 +5,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 1.12.3
-    created: "2021-05-20T23:40:59.2807786+09:00"
+    created: "2021-05-20T23:42:46.5137609+09:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -35,7 +35,7 @@ entries:
   hbase:
   - apiVersion: v1
     appVersion: 2.0.1
-    created: "2021-05-20T23:40:59.3545833+09:00"
+    created: "2021-05-20T23:42:46.5816102+09:00"
     dependencies:
     - condition: hdfs.enabled
       name: hdfs
@@ -58,7 +58,7 @@ entries:
     version: 0.1.6
   - apiVersion: v1
     appVersion: 2.0.1
-    created: "2021-05-20T23:40:59.3625566+09:00"
+    created: "2021-05-20T23:42:46.5975704+09:00"
     dependencies:
     - condition: hdfs.enabled
       name: hdfs
@@ -82,7 +82,7 @@ entries:
   hbase-rest:
   - apiVersion: v1
     appVersion: 2.0.1
-    created: "2021-05-20T23:40:59.3685666+09:00"
+    created: "2021-05-20T23:42:46.6015569+09:00"
     dependencies:
     - condition: hdfs.enabled
       name: hdfs
@@ -106,7 +106,7 @@ entries:
   hdfs:
   - apiVersion: v1
     appVersion: 2.7.7
-    created: "2021-05-20T23:40:59.3565733+09:00"
+    created: "2021-05-20T23:42:46.5825753+09:00"
     description: The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models.
     digest: c11caeca1e5bb384e37ce86666bf5195fd914bd8d16efd027ef309f375034f4d
     home: https://hadoop.apache.org/
@@ -120,14 +120,39 @@ entries:
     urls:
     - hdfs-0.1.10.tgz
     version: 0.1.10
+  kafka:
+  - apiVersion: v1
+    appVersion: 5.0.1
+    created: "2021-05-20T23:42:46.5895889+09:00"
+    dependencies:
+    - name: hbase
+      repository: https://bigdataflatformdynamicconfiguration.github.io/Custom_Helm/
+      version: ~0.1.6
+    deprecated: true
+    description: DEPRECATED Apache Kafka is publish-subscribe messaging rethought as a distributed commit log.
+    digest: 8f7d90965ac9580392e65389940c6dea881e914f7b5d2256a43b20281fe56cbd
+    home: https://kafka.apache.org/
+    icon: https://kafka.apache.org/images/logo.png
+    keywords:
+    - kafka
+    - zookeeper
+    - kafka statefulset
+    name: kafka
+    sources:
+    - https://github.com/Yolean/kubernetes-kafka
+    - https://github.com/confluentinc/cp-docker-images
+    - https://github.com/apache/kafka
+    urls:
+    - kafka-0.21.5.tgz
+    version: 0.21.5
   python:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-05-20T23:40:59.3575945+09:00"
+    created: "2021-05-20T23:42:46.5905563+09:00"
     description: A Helm chart for Kubernetes
     digest: 5e8064bddd7a678074fa5b9fa6f338497fa6d1e12ada232f8e8eb4315359c85b
     name: python
     urls:
     - python-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-20T23:40:59.2708038+09:00"
+generated: "2021-05-20T23:42:46.5067785+09:00"
