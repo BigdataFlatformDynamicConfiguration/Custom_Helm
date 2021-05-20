@@ -1,0 +1,9 @@
+dependencies:
+- name: hdfs
+  version: ~0.1.10
+  repository: https://bigdataflatformdynamicconfiguration.github.io/Custom_Helm/
+  condition: hdfs.enabled
+- name: zookeeper
+  version: ~6.3.0
+  repository: https://charts.bitnami.com/bitnami
+  condition: zookeeper.enabled
