@@ -1,0 +1,6 @@
+dependencies:
+- name: hbase-kafka
+  repository: https://bigdataflatformdynamicconfiguration.github.io/Custom_Helm/
+  version: 0.1.6
+digest: sha256:f516bea86989d3368674976a8ffcc8fdba5a44be142ed0e45fb06b08d1f6044a
+generated: "2021-05-19T20:38:44.5629494+09:00"

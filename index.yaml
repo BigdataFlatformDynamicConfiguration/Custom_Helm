@@ -5,7 +5,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 1.12.3
-    created: "2021-05-20T22:59:43.8182737+09:00"
+    created: "2021-05-20T23:04:51.2481192+09:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -35,7 +35,7 @@ entries:
   hbase:
   - apiVersion: v1
     appVersion: 2.0.1
-    created: "2021-05-20T22:59:43.8890915+09:00"
+    created: "2021-05-20T23:04:51.3189226+09:00"
     dependencies:
     - condition: hdfs.enabled
       name: hdfs
@@ -46,7 +46,7 @@ entries:
       repository: https://charts.bitnami.com/bitnami
       version: ~6.3.0
     description: HBase is an open-source non-relational distributed database modeled after Google's Bigtable and written in Java.
-    digest: 9d8446b23554166fbc4c8d961c82764f942238178d545b6ba9d6c87105079473
+    digest: 00eea43ac358a4f83e2505f694f56ed92ba5084f473779b9356726b9e75f93c2
     home: https://hbase.apache.org/
     icon: http://hbase.apache.org/images/hbase_logo_with_orca.png
     maintainers:
@@ -59,7 +59,7 @@ entries:
   hbase-kafka:
   - apiVersion: v1
     appVersion: 2.0.1
-    created: "2021-05-20T22:59:43.8970574+09:00"
+    created: "2021-05-20T23:04:51.3229121+09:00"
     dependencies:
     - condition: hdfs.enabled
       name: hdfs
@@ -70,7 +70,7 @@ entries:
       repository: https://charts.bitnami.com/bitnami
       version: ~6.3.0
     description: HBase is an open-source non-relational distributed database modeled after Google's Bigtable and written in Java.
-    digest: 191528488ba4c4e67feca8e65f85483d1b376b884714de3da9cbb3102e01c6d9
+    digest: d105f4430d97e77b74bddea165a952fa6fac2150dd7347d15729c62a2705fa00
     home: https://hbase.apache.org/
     icon: http://hbase.apache.org/images/hbase_logo_with_orca.png
     maintainers:
@@ -83,7 +83,7 @@ entries:
   hbase-rest:
   - apiVersion: v1
     appVersion: 2.0.1
-    created: "2021-05-20T22:59:43.9089991+09:00"
+    created: "2021-05-20T23:04:51.327906+09:00"
     dependencies:
     - condition: hdfs.enabled
       name: hdfs
@@ -94,7 +94,7 @@ entries:
       repository: https://charts.bitnami.com/bitnami
       version: ~6.3.0
     description: HBase is an open-source non-relational distributed database modeled after Google's Bigtable and written in Java.
-    digest: cea68f95fd8a4c4dea233a67ca87e72d03f932fcadc9a1baa401188c025e75a6
+    digest: 4b04958596ed7c4941e6ebf2dc20e7458093601048bf814eaea1ba22063b3173
     home: https://hbase.apache.org/
     icon: http://hbase.apache.org/images/hbase_logo_with_orca.png
     maintainers:
@@ -107,7 +107,7 @@ entries:
   hdfs:
   - apiVersion: v1
     appVersion: 2.7.7
-    created: "2021-05-20T22:59:43.9109937+09:00"
+    created: "2021-05-20T23:04:51.3299004+09:00"
     description: The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models.
     digest: dda5d274a5dc7f1e69fad098622ec6f1b32a40e5880b4cd6d52ddf689dc964d6
     home: https://hadoop.apache.org/
@@ -121,39 +121,14 @@ entries:
     urls:
     - hdfs-0.1.10.tgz
     version: 0.1.10
-  kafka:
-  - apiVersion: v1
-    appVersion: 5.0.1
-    created: "2021-05-20T22:59:43.9259801+09:00"
-    dependencies:
-    - name: hbase-kafka
-      repository: https://bigdataflatformdynamicconfiguration.github.io/Custom_Helm/
-      version: ~0.1.6
-    deprecated: true
-    description: DEPRECATED Apache Kafka is publish-subscribe messaging rethought as a distributed commit log.
-    digest: 522e23abd6f921c9b5f127c63c715913c879082cc9fb4cd20c46d1f110da3687
-    home: https://kafka.apache.org/
-    icon: https://kafka.apache.org/images/logo.png
-    keywords:
-    - kafka
-    - zookeeper
-    - kafka statefulset
-    name: kafka
-    sources:
-    - https://github.com/Yolean/kubernetes-kafka
-    - https://github.com/confluentinc/cp-docker-images
-    - https://github.com/apache/kafka
-    urls:
-    - kafka-0.21.5.tgz
-    version: 0.21.5
   python:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-05-20T22:59:43.9319384+09:00"
+    created: "2021-05-20T23:04:51.330863+09:00"
     description: A Helm chart for Kubernetes
     digest: 5e8064bddd7a678074fa5b9fa6f338497fa6d1e12ada232f8e8eb4315359c85b
     name: python
     urls:
     - python-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-20T22:59:43.8012449+09:00"
+generated: "2021-05-20T23:04:51.2401403+09:00"
