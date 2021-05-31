@@ -30,5 +30,5 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           command: 
           - "/bin/bash"
-          - "/tmp/hbase-config/bootstrap.sh"
+          - "/tmp/module-config/bootstrap.sh"
 
