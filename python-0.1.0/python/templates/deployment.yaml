@@ -29,9 +29,7 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           command: 
-          - "/bin/sh"
-          - "-ec"
-          - "while :; do echo '.'; sleep 5 ; done"
+          - "/bin/bash"
           - "mkdir modules"
           - "cd modules"
           - "pip install kafka-python"
