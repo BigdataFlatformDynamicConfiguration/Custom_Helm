@@ -32,7 +32,4 @@ spec:
           - "/bin/bash"
           - "-ec"
           - "while :; do echo '.'; sleep 5 ; done"
-          command: 
-          - "/bin/bash"
-          - "/tmp/module-config/bootstrap.sh"
 
