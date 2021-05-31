@@ -9,12 +9,10 @@ data:
   bootstrap.sh: |
     #!/bin/bash
     CONFIG_DIR="/tmp/module-config"
-    # mkdir modules
-    # cd modules
-    # pip install kafka-python
-    # pip install happybase
-    # pip install flask
-    # wget {{.Values.module.url}}
-    # python3 app.py '{{ .Release.Name }}-kafka' '{{ .Release.Name }}-hbase-master' >> res.txt
-    -ec
-    while :; do echo '.'; sleep 5 ; done
+    mkdir modules
+    cd modules
+    pip install kafka-python
+    pip install happybase
+    pip install flask
+    wget {{.Values.module.url}}
+    python3 app.py '{{ .Release.Name }}-kafka' '{{ .Release.Name }}-hbase-master' >> res.txt
