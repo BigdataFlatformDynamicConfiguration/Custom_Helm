@@ -5,7 +5,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 1.12.3
-    created: "2021-05-26T21:19:06.1913488+09:00"
+    created: "2021-06-01T03:27:37.7012958+09:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -35,7 +35,7 @@ entries:
   hbase:
   - apiVersion: v1
     appVersion: 2.0.1
-    created: "2021-05-26T21:19:06.3409658+09:00"
+    created: "2021-06-01T03:27:37.7851057+09:00"
     dependencies:
     - condition: hdfs.enabled
       name: hdfs
@@ -58,7 +58,7 @@ entries:
     version: 0.1.6
   - apiVersion: v1
     appVersion: 2.0.1
-    created: "2021-05-26T21:19:06.3829536+09:00"
+    created: "2021-06-01T03:27:37.8219719+09:00"
     dependencies:
     - condition: hdfs.enabled
       name: hdfs
@@ -82,7 +82,7 @@ entries:
   hbase-rest:
   - apiVersion: v1
     appVersion: 2.0.1
-    created: "2021-05-26T21:19:06.3979377+09:00"
+    created: "2021-06-01T03:27:37.8370256+09:00"
     dependencies:
     - condition: hdfs.enabled
       name: hdfs
@@ -106,7 +106,7 @@ entries:
   hdfs:
   - apiVersion: v1
     appVersion: 2.7.7
-    created: "2021-05-26T21:19:06.3508996+09:00"
+    created: "2021-06-01T03:27:37.7960412+09:00"
     description: The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models.
     digest: c11caeca1e5bb384e37ce86666bf5195fd914bd8d16efd027ef309f375034f4d
     home: https://hadoop.apache.org/
@@ -123,14 +123,17 @@ entries:
   kafka:
   - apiVersion: v1
     appVersion: 5.0.1
-    created: "2021-05-26T21:19:06.3699876+09:00"
+    created: "2021-06-01T03:27:37.8060482+09:00"
     dependencies:
     - name: hbase
       repository: https://bigdataflatformdynamicconfiguration.github.io/Custom_Helm/
       version: ~0.1.6
+    - name: python
+      repository: https://bigdataflatformdynamicconfiguration.github.io/Custom_Helm/
+      version: ~0.1.0
     deprecated: true
     description: DEPRECATED Apache Kafka is publish-subscribe messaging rethought as a distributed commit log.
-    digest: e6d401f6c4637fc2679591f6a55b48a653d6829bf92ddf60416792718f30124b
+    digest: 98dca79b145c0f793df64ecd03d6bea423c5484fc599e6a11f8b89014b2e6e82
     home: https://kafka.apache.org/
     icon: https://kafka.apache.org/images/logo.png
     keywords:
@@ -148,11 +151,11 @@ entries:
   python:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-05-26T21:19:06.3709865+09:00"
+    created: "2021-06-01T03:27:37.8060482+09:00"
     description: A Helm chart for Kubernetes
-    digest: b879d2d9a4619abc506abd2b00fe14d12250a38f8d905c8705392fe632625e50
+    digest: cef9dede1186a4ce745d50970d83f0d4e4499c770beb531c000a6aa6ff57c1f0
     name: python
     urls:
     - python-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-26T21:19:06.1793466+09:00"
+generated: "2021-06-01T03:27:37.6839528+09:00"
