@@ -30,13 +30,5 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           command: 
           - "/bin/bash"
-          - "-ec"
-          - "while :; do echo '.'; sleep 5 ; done"
-          - "mkdir modules"
-          - "cd modules"
-          - "pip install kafka-python"
-          - "pip install happybase"
-          - "pip install flask"
-          - "wget {{.Values.module.url}}"
-          - "python3 app.py '{{ .Release.Name }}-kafka' '{{ .Release.Name }}-hbase-master' >> res.txt"
+          - "/tmp/hbase-config/bootstrap.sh"
 
