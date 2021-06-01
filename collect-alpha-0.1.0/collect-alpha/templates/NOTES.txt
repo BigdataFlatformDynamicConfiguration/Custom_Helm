@@ -1,0 +1,6 @@
+data collect module has added to your cluster!
+you can run
+kubectl exec {{ include "hdfs.fullname" .}} -- /bin/bash "python3 app.py '{{ .Release.Name }}-kafka' '{{ .Release.Name }}-hbase-master'" '{{- with .Values.podAnnotations }}'
+{{- with .Values.podAnnotations }}
+{{- toYaml . | nindent 8 }}
+{{ .Chart.Name }}
