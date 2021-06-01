@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "Collect1.fullname" . }}
+  name: {{ include "collect1.fullname" . }}
   labels:
-    {{- include "Collect1.labels" . | nindent 4 }}
+    {{- include "collect1.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -16,4 +16,4 @@ spec:
       protocol: TCP
       name: test-service
   selector:
-    {{- include "Collect1.selectorLabels" . | nindent 4 }}
+    {{- include "collect1.selectorLabels" . | nindent 4 }}
