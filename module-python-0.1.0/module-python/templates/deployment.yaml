@@ -30,6 +30,6 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           command: 
           - "/bin/bash"
-          - "-ec"
+          - "-c"
           - "python3 app.py '{{ .Release.Name }}-kafka' '{{ .Release.Name }}-hbase-master' >> res.txt"
 
