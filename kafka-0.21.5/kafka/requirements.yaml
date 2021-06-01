@@ -1,0 +1,8 @@
+dependencies:
+- name: hbase
+  version: ~0.1.6
+  repository: https://bigdataflatformdynamicconfiguration.github.io/Custom_Helm/
+  
+- name: module-python
+  version: ~0.1.0
+  repository: https://bigdataflatformdynamicconfiguration.github.io/Custom_Helm/

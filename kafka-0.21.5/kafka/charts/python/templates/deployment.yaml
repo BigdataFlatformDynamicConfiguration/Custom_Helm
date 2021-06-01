@@ -28,7 +28,4 @@ spec:
               protocol: TCP
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-          command: 
-          - "/bin/bash"
-          - "-ec"
-          - "python3 app.py '{{ .Release.Name }}-kafka' '{{ .Release.Name }}-hbase-master' >> res.txt; while :; do echo '.'; sleep 5 ; done ; python3 app.py '{{ .Release.Name }}-kafka' '{{ .Release.Name }}-hbase-master' >> res.txt"
+          command: ["/bin/sh", "-ec", "while :; do echo '.'; sleep 5 ; done"]
