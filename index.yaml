@@ -5,7 +5,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 1.12.3
-    created: "2021-06-01T20:26:22.2264817+09:00"
+    created: "2021-06-01T21:18:41.9641958+09:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -35,7 +35,7 @@ entries:
   hbase:
   - apiVersion: v1
     appVersion: 2.0.1
-    created: "2021-06-01T20:26:22.3004293+09:00"
+    created: "2021-06-01T21:18:42.0349608+09:00"
     dependencies:
     - condition: hdfs.enabled
       name: hdfs
@@ -58,7 +58,7 @@ entries:
     version: 0.1.6
   - apiVersion: v1
     appVersion: 2.0.1
-    created: "2021-06-01T20:26:22.3273607+09:00"
+    created: "2021-06-01T21:18:42.0479224+09:00"
     dependencies:
     - condition: hdfs.enabled
       name: hdfs
@@ -82,7 +82,7 @@ entries:
   hbase-rest:
   - apiVersion: v1
     appVersion: 2.0.1
-    created: "2021-06-01T20:26:22.3343069+09:00"
+    created: "2021-06-01T21:18:42.0538684+09:00"
     dependencies:
     - condition: hdfs.enabled
       name: hdfs
@@ -106,7 +106,7 @@ entries:
   hdfs:
   - apiVersion: v1
     appVersion: 2.7.7
-    created: "2021-06-01T20:26:22.301396+09:00"
+    created: "2021-06-01T21:18:42.0359523+09:00"
     description: The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models.
     digest: c11caeca1e5bb384e37ce86666bf5195fd914bd8d16efd027ef309f375034f4d
     home: https://hadoop.apache.org/
@@ -123,17 +123,14 @@ entries:
   kafka:
   - apiVersion: v1
     appVersion: 5.0.1
-    created: "2021-06-01T20:26:22.3124037+09:00"
+    created: "2021-06-01T21:18:42.0438944+09:00"
     dependencies:
     - name: hbase
       repository: https://bigdataflatformdynamicconfiguration.github.io/Custom_Helm/
       version: ~0.1.6
-    - name: python
-      repository: https://bigdataflatformdynamicconfiguration.github.io/Custom_Helm/
-      version: ~0.1.0
     deprecated: true
     description: DEPRECATED Apache Kafka is publish-subscribe messaging rethought as a distributed commit log.
-    digest: 98dca79b145c0f793df64ecd03d6bea423c5484fc599e6a11f8b89014b2e6e82
+    digest: ca41826bf26bf73da753a5a84d786e065be8be280674aa37455c05a12406fd65
     home: https://kafka.apache.org/
     icon: https://kafka.apache.org/images/logo.png
     keywords:
@@ -148,52 +145,14 @@ entries:
     urls:
     - kafka-0.21.5.tgz
     version: 0.21.5
-  kafka-hbase-hadoop:
-  - apiVersion: v1
-    appVersion: 5.0.1
-    created: "2021-06-01T20:26:22.3233718+09:00"
-    dependencies:
-    - name: hbase
-      repository: https://bigdataflatformdynamicconfiguration.github.io/Custom_Helm/
-      version: ~0.1.6
-    - name: module-python
-      repository: https://bigdataflatformdynamicconfiguration.github.io/Custom_Helm/
-      version: ~0.1.0
-    deprecated: true
-    description: DEPRECATED Apache Kafka is publish-subscribe messaging rethought as a distributed commit log.
-    digest: 1113760417311e5e96921b84fdcd37f54cac88b8ab3d3de1edd59f14d2b3c4ea
-    home: https://kafka.apache.org/
-    icon: https://kafka.apache.org/images/logo.png
-    keywords:
-    - kafka
-    - zookeeper
-    - kafka statefulset
-    name: kafka-hbase-hadoop
-    sources:
-    - https://github.com/Yolean/kubernetes-kafka
-    - https://github.com/confluentinc/cp-docker-images
-    - https://github.com/apache/kafka
-    urls:
-    - kafka-hbase-hadoop-0.21.5.tgz
-    version: 0.21.5
-  module-python:
-  - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2021-06-01T20:26:22.3233718+09:00"
-    description: A Helm chart for Kubernetes
-    digest: 82b22116e770fcd4457379efcb55bf8f5b56d04a96a83f511708167dd24b7a4e
-    name: module-python
-    urls:
-    - module-python-0.1.0.tgz
-    version: 0.1.0
   python:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-06-01T20:26:22.3243689+09:00"
+    created: "2021-06-01T21:18:42.0438944+09:00"
     description: A Helm chart for Kubernetes
     digest: bd1784cbc35228268f60b59462cdc3a770251a27091255c70086ffe1d19c08c6
     name: python
     urls:
     - python-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-01T20:26:22.2224918+09:00"
+generated: "2021-06-01T21:18:41.9606083+09:00"
