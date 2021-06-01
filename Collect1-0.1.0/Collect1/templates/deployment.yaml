@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "Collect1.fullname" . }}
+  name: {{ include "collect1.fullname" . }}
   labels:
-    {{- include "Collect1.labels" . | nindent 4 }}
+    {{- include "collect1.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicas }}
   selector:
     matchLabels:
-      {{- include "Collect1.selectorLabels" . | nindent 6 }}
+      {{- include "collect1.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -16,7 +16,7 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "Collect1.selectorLabels" . | nindent 8 }}
+        {{- include "collect1.selectorLabels" . | nindent 8 }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
