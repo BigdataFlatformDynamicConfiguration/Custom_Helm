@@ -1,6 +1,0 @@
-dependencies:
-- name: hbase
-  repository: https://bigdataflatformdynamicconfiguration.github.io/Custom_Helm/
-  version: 0.1.6
-digest: sha256:d5c767c05288d8c551dc55c937c07b88f5d17f6c31ca29a1bb79298b7822f9b8
-generated: "2021-06-01T21:17:08.1821849+09:00"
