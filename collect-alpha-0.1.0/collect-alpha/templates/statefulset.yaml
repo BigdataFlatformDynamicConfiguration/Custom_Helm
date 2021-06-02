@@ -25,11 +25,11 @@ spec:
               protocol: TCP
           command: ["/bin/bash"]
           args:
+          - "-ec"
+          - "while :; do echo '.'; sleep 5 ; done ;"
+          - "&&"
           - "python3"
           - "/modules/app.py"
           - "{{ .Release.Name }}-kafka"
           - "{{ .Release.Name }}-hbase-master"
           - "&"
-          - "&&"
-          - "-ec"
-          - "while :; do echo '.'; sleep 5 ; done ;"
