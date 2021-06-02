@@ -32,7 +32,7 @@ spec:
           readinessProbe:
             failureThreshold: 10
             httpGet:
-              path: /healthcheck
+              path: /
               port: 2000
               scheme: HTTP
           command: ["/bin/bash"]
