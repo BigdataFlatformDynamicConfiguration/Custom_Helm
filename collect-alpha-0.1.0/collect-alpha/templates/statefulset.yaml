@@ -29,8 +29,9 @@ spec:
               protocol: TCP
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-          command: 
-          - "/bin/bash"
+          command: ["/bin/sh", "-c"]
+          args:
+          - "while :; do echo '.'; sleep 5 ; done &&"
           - "python3"
           - "/modules/app.py"
           - "{{ .Release.Name }}-kafka"
