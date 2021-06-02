@@ -1,2 +1,0 @@
-data collect module has added to your cluster!
-please chekc detailed usage in our git hub : https://github.com/BigdataFlatformDynamicConfiguration/kafka-hbase

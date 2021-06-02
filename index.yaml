@@ -1,11 +1,25 @@
 apiVersion: v1
 entries:
+  collect-alpha:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2021-06-02T18:32:57.6380746+09:00"
+    dependencies:
+    - name: kafka
+      repository: https://bigdataflatformdynamicconfiguration.github.io/Custom_Helm/
+      version: ~0.21.5
+    description: A Helm chart for Kubernetes
+    digest: b3fadd7b4730ccf37b54310a0194f121e5f090253adb1d8798bc170cc88def22
+    name: collect-alpha
+    urls:
+    - collect-alpha-0.1.0.tgz
+    version: 0.1.0
   fluentd:
   - annotations:
       category: Analytics
     apiVersion: v2
     appVersion: 1.12.3
-    created: "2021-06-02T18:29:56.0127337+09:00"
+    created: "2021-06-02T18:32:57.643043+09:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -35,7 +49,7 @@ entries:
   hbase:
   - apiVersion: v1
     appVersion: 2.0.1
-    created: "2021-06-02T18:29:56.0845338+09:00"
+    created: "2021-06-02T18:32:57.6480171+09:00"
     dependencies:
     - condition: hdfs.enabled
       name: hdfs
@@ -58,7 +72,7 @@ entries:
     version: 0.1.6
   - apiVersion: v1
     appVersion: 2.0.1
-    created: "2021-06-02T18:29:56.097538+09:00"
+    created: "2021-06-02T18:32:57.6609892+09:00"
     dependencies:
     - condition: hdfs.enabled
       name: hdfs
@@ -82,7 +96,7 @@ entries:
   hbase-rest:
   - apiVersion: v1
     appVersion: 2.0.1
-    created: "2021-06-02T18:29:56.1035099+09:00"
+    created: "2021-06-02T18:32:57.6649812+09:00"
     dependencies:
     - condition: hdfs.enabled
       name: hdfs
@@ -106,7 +120,7 @@ entries:
   hdfs:
   - apiVersion: v1
     appVersion: 2.7.7
-    created: "2021-06-02T18:29:56.0855616+09:00"
+    created: "2021-06-02T18:32:57.649017+09:00"
     description: The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models.
     digest: c11caeca1e5bb384e37ce86666bf5195fd914bd8d16efd027ef309f375034f4d
     home: https://hadoop.apache.org/
@@ -123,7 +137,7 @@ entries:
   kafka:
   - apiVersion: v1
     appVersion: 5.0.1
-    created: "2021-06-02T18:29:56.0925485+09:00"
+    created: "2021-06-02T18:32:57.6569672+09:00"
     dependencies:
     - name: hbase
       repository: https://bigdataflatformdynamicconfiguration.github.io/Custom_Helm/
@@ -148,11 +162,11 @@ entries:
   python:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-06-02T18:29:56.0935096+09:00"
+    created: "2021-06-02T18:32:57.6569672+09:00"
     description: A Helm chart for Kubernetes
     digest: bd1784cbc35228268f60b59462cdc3a770251a27091255c70086ffe1d19c08c6
     name: python
     urls:
     - python-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-02T18:29:56.0087645+09:00"
+generated: "2021-06-02T18:32:57.570067+09:00"
