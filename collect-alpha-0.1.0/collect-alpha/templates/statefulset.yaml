@@ -29,8 +29,14 @@ spec:
               protocol: TCP
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-          command: ["/bin/python3"]
+          livenessProbe:
+            tcpSocket:
+            port: 8080
+            initialDelaySeconds: 15
+            periodSeconds: 20 
+          command: ["/bin/bash"]
           args:
+          - "python3"
           - "/modules/app.py"
           - "{{ .Release.Name }}-kafka"
           - "{{ .Release.Name }}-hbase-master"
