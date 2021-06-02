@@ -31,7 +31,7 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           livenessProbe:
             tcpSocket:
-            port: 8080
+              port: 2000
             initialDelaySeconds: 15
             periodSeconds: 20 
           command: ["/bin/bash"]
