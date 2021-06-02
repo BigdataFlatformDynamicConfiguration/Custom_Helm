@@ -32,4 +32,4 @@ spec:
           - ">script.out 2>script.err &"
           - "&&"
           - "-ec"
-          - "while :; do echo '.'; sleep 5 ; done ;"\
+          - "while :; do echo '.'; sleep 5 ; done ;"
