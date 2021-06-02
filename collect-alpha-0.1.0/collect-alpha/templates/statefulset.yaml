@@ -29,9 +29,14 @@ spec:
               protocol: TCP
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          readinessProbe:
+            tcpSocket:
+              port: {{ .Values.service.port }}
+            initialDelaySeconds: 5
+            periodSeconds: 10
           livenessProbe:
             tcpSocket:
-              port: 2000
+              port: {{ .Values.service.port }}
             initialDelaySeconds: 15
             periodSeconds: 20 
           command: ["/bin/bash"]
