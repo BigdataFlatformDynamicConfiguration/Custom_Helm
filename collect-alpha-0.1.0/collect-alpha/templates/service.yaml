@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "collect-alpha.fullname" . }}
+  name: {{ include "collect-alpha.fullname" . }}-api
   labels:
     {{- include "collect-alpha.labels" . | nindent 4 }}
 spec:

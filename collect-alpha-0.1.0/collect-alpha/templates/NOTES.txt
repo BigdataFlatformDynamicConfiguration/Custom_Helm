@@ -1,2 +1,5 @@
 data collect module has added to your cluster!
+execute this command : 
+    kubectl exec {{ include "collect-alpha.fullname" . }}-0 python3 /modules/app.py '{{ .Release.Name }}-kafka' '{{ .Release.Name }}-hbase-master' 'topic0'
+    
 please chekc detailed usage in our git hub : https://github.com/BigdataFlatformDynamicConfiguration/kafka-hbase

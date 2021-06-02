@@ -6,6 +6,7 @@ metadata:
     {{- include "collect-alpha.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicas }}
+  serviceName : {{ include "collect-alpha.fullname" . }}-api
   selector:
     matchLabels:
       {{- include "collect-alpha.selectorLabels" . | nindent 6 }}
@@ -23,11 +24,12 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - name: kafka-module
+            - name: api-module
               containerPort: {{ .Values.service.port }}
               protocol: TCP
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           command: 
           - "/bin/bash"
-          - "python3 ./app.py '{{ .Release.Name }}-kafka' '{{ .Release.Name }}-hbase-master' 'topic-one'"
+          - "-ec"
+          - "while :; do echo '.'; sleep 5 ; done ;"
