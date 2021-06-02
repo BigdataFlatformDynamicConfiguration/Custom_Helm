@@ -12,10 +12,6 @@ spec:
       {{- include "collect-alpha.selectorLabels" . | nindent 6 }}
   template:
     metadata:
-      {{- with .Values.podAnnotations }}
-      annotations:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
       labels:
         {{- include "collect-alpha.selectorLabels" . | nindent 8 }}
     spec:
@@ -27,14 +23,6 @@ spec:
             - name: api-module
               containerPort: {{ .Values.service.port }}
               protocol: TCP
-          resources:
-            {{- toYaml .Values.resources | nindent 12 }}
-          readinessProbe:
-            failureThreshold: 10
-            httpGet:
-              path: /
-              port: 2000
-              scheme: HTTP
           command: ["/bin/bash"]
           args:
           - "python3"
@@ -42,3 +30,6 @@ spec:
           - "{{ .Release.Name }}-kafka"
           - "{{ .Release.Name }}-hbase-master"
           - "&"
+          - "&&"
+          - "-ec"
+          - "while :; do echo '.'; sleep 5 ; done ;"
