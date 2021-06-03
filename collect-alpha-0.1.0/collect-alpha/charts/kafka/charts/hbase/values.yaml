@@ -19,8 +19,8 @@ antiAffinity: "soft"
 conf:
   hadoopUserName: hdfs
   hbaseSite:
-    hbase.rootdir:  "hdfs://{{.Release.Name}}-hdfs-namenode:8020/hbase"
-    hbase.zookeeper.quorum:  "{{.Release.Name}}-zookeeper:2181"
+    hbase.rootdir:  # default is "hdfs://{{.Release.Name}}-hdfs-namenode:8020/hbase"
+    hbase.zookeeper.quorum:  # default is "{{.Release.Name}}-zookeeper:2181"
 
 hbase:
   master:
