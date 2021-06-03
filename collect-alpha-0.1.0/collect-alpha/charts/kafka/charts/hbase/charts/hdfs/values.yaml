@@ -22,8 +22,8 @@ httpfs:
   adminPort: 14001
 
 nameNode:
-  replicas: 3
-  pdbMinAvailable: 3
+  replicas: 2
+  pdbMinAvailable: 2
   port: 8020
   resources:
     requests:
