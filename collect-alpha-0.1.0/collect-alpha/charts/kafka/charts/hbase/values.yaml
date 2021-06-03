@@ -24,11 +24,11 @@ conf:
 
 hbase:
   master:
-    replicas: 3
+    replicas: 1
     resources:
       requests:
-        memory: "256Mi"
-        cpu: "10m"
+        memory: "512Mi"
+        cpu: "100m"
       limits:
         memory: "2048Mi"
         cpu: "1000m"
@@ -36,8 +36,8 @@ hbase:
     replicas: 3
     resources:
       requests:
-        memory: "256Mi"
-        cpu: "10m"
+        memory: "512Mi"
+        cpu: "100m"
       limits:
         memory: "2048Mi"
         cpu: "1000m"
