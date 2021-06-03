@@ -23,7 +23,7 @@ httpfs:
 
 nameNode:
   replicas: 2
-  pdbMinAvailable: 1
+  pdbMinAvailable: 2
   port: 8020
   resources:
     requests:
