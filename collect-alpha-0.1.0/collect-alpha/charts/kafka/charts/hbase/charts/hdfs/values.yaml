@@ -22,13 +22,13 @@ httpfs:
   adminPort: 14001
 
 nameNode:
-  replicas: 2
-  pdbMinAvailable: 2
+  replicas: 1
+  pdbMinAvailable: 1
   port: 8020
   resources:
     requests:
-      memory: "256Mi"
-      cpu: "10m"
+      memory: "512Mi"
+      cpu: "100m"
     limits:
       memory: "2048Mi"
       cpu: "1000m"
