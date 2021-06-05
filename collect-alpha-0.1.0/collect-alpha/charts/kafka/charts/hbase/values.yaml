@@ -24,7 +24,7 @@ conf:
 
 hbase:
   master:
-    replicas: 1
+    replicas: 2
     resources:
       requests:
         memory: "512Mi"
